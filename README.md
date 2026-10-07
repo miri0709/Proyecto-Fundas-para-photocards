@@ -1,2 +1,2 @@
 # Proyecto-Fundas-para-photocards
-Este repositorio es diseñado para la asignatura de programación y diseño de aplicaciones 
+Esta página web está diseñada para ofrecer fundas de photocard personalizadas para fans del K-pop
