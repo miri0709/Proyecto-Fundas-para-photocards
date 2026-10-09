@@ -1,20 +1,32 @@
+/*RESET*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Desplazamiento suave del html*/
+
 html{
     scroll-behavior: smooth;
 }
 
+/* Configuraciones generales*/
+
 body{
     margin: 0;
-    font-family: segoe UI ,tahoma,geneva,verdana,sans-serif;
-    color:rgb(131, 145, 247);
-    background-color: azure;
+    font-family: "Amatic SC",sans-serif;
+    color:rgb(10, 10, 10);
+    background-color: rgb(219, 219, 248);
     overflow-x: hidden;
 }
+
+.amatic-sc {
+  font-family: "Amatic SC", sans-serif;
+  font-style: normal;
+}
+
+/*Contenedor principla*/
 
 .container {width: min(1100px,
             calc(100% - 2rem));
@@ -25,17 +37,29 @@ body{
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255,253,248,.92);
+  background: rgba(230, 137, 253, 0.92);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
 }
 
+/*Configuraciones para el header- Encabezado*/           
+.sitio-header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(195, 92, 247, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+/*Configueraciones internas del encabezado-header-inner*/
 .header-inner{
     display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   min-height: 80px;
+
 }
 
 .logo{
@@ -46,4 +70,92 @@ body{
   font-weight: 700;
   font-size: 1.1rem;
   color: black;
+}
+
+/* listas*/
+
+UL{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+/*enlaces*/
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* menu principal de navegacion*/
+
+.main-nav{
+    display:none;
+    align-items:center;
+    gap:1.5rem;
+
+}
+
+/* listado Horizontal*/
+
+.main-nav ul {
+    display:flex;
+    gap: 1.5rem;
+
+}
+
+.main-nav a{
+    font-weight:600;
+    transition: color .2s ease;
+
+}
+
+.main-nav{
+    color:rgb(15, 15, 16)
+}
+
+.menu-toggle {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgb(190, 94, 249);
+  background: #fff;
+  color: rgb(225, 212, 251);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  max-height: 0;
+  overflow: hidden;
+  border-top: 1px solid rgb(195, 169, 248);
+  background: rgb(231, 224, 246);
+  transition: max-height .28s ease;
+}
+.mobile-nav.open {
+     max-height: 360px; }
+
+.mobile-nav ul {
+     display: flex;
+      flex-direction: column;
+       gap: .3rem; 
+       padding: 1rem 1.25rem; 
+    }
+
+.mobile-nav li a {
+     display: block; 
+     padding: .7rem .5rem;
+      border-radius: .6rem; 
+      font-weight: 600;
+    }
+
+.mobile-nav .btn {
+     margin: .5rem 1.25rem 1.25rem; 
+    }
+
+@media (min-width: 768px) {
+  .main-nav { display: flex; }
+  .menu-toggle, .mobile-nav { display: none; }
 }
