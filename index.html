@@ -1,166 +1,231 @@
+```html
 <!DOCTYPE html>
-<!--El doctipe indica el tipo de documento HTML-->
-<!--Nombre: Miranda De La O-->
-<!--PROYECTO para ENTREGABLE 2 y 3-->
-<!--Fundas para photocards-->
+<!--El Doctype indica el tipo de documento html-->
+<!--Nombre: Miranda de la O-->
+<!--Proyecto para entregable 2 y 3-->
+<!--Fundas K-pop personalizadas-->
 <html lang="es">
-
+ <!--Esta etiqueta sirve para indicar el lenguaje-->
 <head>
-<!--La etiqueta mata es la configuración de toda la pagina web -->
-<meta charset="UTF-8">
-  <meta name="description" content="Vendemos fundas decoradas y bonitas para tus photocards. Así las proteges y las haces ver aún más lindas.">
-  <meta name="keywords" content="Decoradas ,Protección,Estilo,Únicas ,Colección">
-  <meta name="author" content="Miri De La O ">
+    <meta charset="UTF-8">
+  <meta name="description" content="Venta de fundas personalizadas de K-pop para guardar photocards">
+  <meta name="keywords" content="K-pop, Fundas personalizadas, Photocards, Álbumes, Accesorios K-pop">
+  <meta name="author" content="Miranda de la O">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
+  <!--La etiqueta meta es la configuración de toda la pagina web-->
+ <!--En el head van todos los meta datos que hacen que sea funcional la pagina y muestra como la vamos encontrar en la web-->
   <link rel="stylesheet" href="css/style.css">
-<title>BiasCases</title>
-<!-- El tag de title es para como quiero que se muestre en la web -->
+<title>BiasCase</title>
+<!--El tag de title es para como quiero que se muestre en la web -->
 </head>
-
 <body>
-<!--ENCABEZADO HEADER -->
-
-
-<!-- Aqui comienza el contenido principla -->
-
-  <header class="sitio-header"></header>
+<!--El body donde inicia el cuerpo de mi pagina web-->
+<!--ENCABEZADO - HEADER -->
+<header class="sitio-header">
 
     <div class="container header-inner">
         <a href="#inicio" class="logo">
-            <span class="logo-icono">🥰✨</span>
-            BiasCases
-         </a>
+            <span class="logo-icono">🔥</span>
+            Fundas K-pop
+        </a>
 
+    <nav class="main-nav"> 
+        <ul>
+            <li>
+            <a href="#inico">Inicio</a>
+            </li>
 
-    <nav class="main-nav">
+            <li>
+            <a href="#servicios">Servicios</a>
+            </li>
 
-    
+            <li>
+            <a href="#nosotros">About</a>
+            </li>
+
+            <li>
+            <a href="#contacto">Contacto</a>
+            </li>
+
+        </ul>
+
+    </nav> 
+
+    <!--Boton Menu movil--> 
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+<!--Navegación movil-->
+    <nav id="mobile-menu" class="mobile-nav">
       <ul>
-   <li>
-         <a href="#inicio">Inicio</a>
+        <li>
+         <a href="#inico">Inicio</a>
          </li>
 
-        <li>
-         <a href="#Productos">Productos</a>
-        </li>
+            <li>
+            <a href="#servicios">Servicios</a>
+            </li>
 
-         <li>
-         <a href="#Nosotros">Nosotros</a>
-        </li>
+            <li>
+            <a href="#nosotros">About</a>
+            </li>
 
-
-        <li>
-         <a href="#Contacto">Contacto</a>
-        </li>
-
+            <li>
+            <a href="#contacto">Contacto</a>
+            </li>
       </ul>
      
     </nav>
-    <button id="menu-toggle" class="menu-toggle" 
-    aria-label="Abrir menú" aria-expanded="false" 
-    aria-controls="mobile-menu">☰</button>
-    <div>
-<nav id="mobile-menu" class="mobile-nav">
-    <ul>
-
-        <li>
-         <a href="#inicio">Inicio</a>
-         </li>
-
-        <li>
-         <a href="#Productos">Productos</a>
-        </li>
-
-         <li>
-         <a href="#Nosotros">Nosotros</a>
-        </li>
-
-
-        <li>
-         <a href="#Contacto">Contacto</a>
-        </li>
-
-
-    </ul>
-
-  </nav>
-
-
-
- 
-
     </header>
 
+    <!--INICIO MAIN (PRINCIPAL) del desarrollo-->
+
     <main>
-        <!--Seccion para el carrusel-->
-        <section id="carrusel" class="carousel-section container"
-        <h2>this is Heading</h2>
-        
-        <!--Primera imagen  BiasCase-->
-        <div class="carousel-track" id="carouseltrackebc"
-        <div class="carousel-slide">
-        <img src="1 img-BiasCase.jpeg" alt="imagen BiasCases">
-    
-    </div>
+        <!--Sección para el carrusel-->
 
-     <!--Segunda imagen  BiasCase-->
+     <section id="inico" class="hero-section">
+       <div class="carousel-track" id="carouseltrackebc">
 
-    <div class="carousel-slide">
-        <img src="2 img-BiasCase.jpeg" alt="imagen BiasCases">
-    
-    </div>
+            <!--Primera imagen de hero-->
+           <div class="carousel-slide">
+               <img src="1 img-BiasCase.jpeg" alt="Fundas personalizadas para photocards">
+               <div class="slide-overlay">
+                    <span class="badge">Tu estilo, tu bias</span>
+                    <h1>Fundas personalizadas <span class="highlight-yellow">Para tus photocards</span></h1>
+                    <p>Protege tus photocards favoritas con diseños únicos inspirados en el K-pop.</p>
+                    <a href="#servicios" class="btn-hero">Ver diseños</a>
+                </div>
+           </div>
 
-     <!--Tercera imagen  BiasCase-->
+           <!--Segunda imagen de hero-->
+           <div class="carousel-slide">
+               <img src="2 img-BiasCase.jpeg" alt="Diseños de fundas K-pop">
+               <div class="slide-overlay">
+                    <span class="badge">Diseños para cada fan</span>
+                    <h1>Personaliza tu funda <span class="highlight-yellow">A tu manera</span></h1>
+                    <p>Elige tus colores, estilos y detalles favoritos para llevar tus photocards contigo.</p>
+                    <a href="#servicios" class="btn-hero">Personalizar mi funda</a>
+                </div>
+           </div>
 
-    <div class="carousel-slide">
-    <img src="3 img-BiasCase.jpeg" alt="imagen BiasCases">
-    
-    </div>
+           <!--Tercera imagen de hero-->
+           <div class="carousel-slide">
+               <img src="3 img-BiasCase.jpeg" alt="Fundas para coleccionar photocards">
+               <div class="slide-overlay">
+                    <span class="badge">Hecho para fans</span>
+                    <h1>Tu colección merece lo mejor <span class="highlight-yellow">K-pop en cada detalle</span></h1>
+                    <p>Cuida, organiza y presume tus photocards con fundas originales y creativas.</p>
+                    <a href="#servicios" class="btn-hero">Descubrir diseños</a>
+                </div>
+           </div>
 
-</div>
-           
-    </section>
+       </div>
 
+        <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
 
+        <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
+     </section>
 
- 
- <p>This is a paragraph.</p>
+     <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS PRODUCTOS</h2>
+                    <h3>Fundas personalizadas de K-pop</h3>
+                </div>
 
-     </main>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Fundas a tu estilo</h4>
+                        <p>Personaliza tus fundas con colores, diseños y detalles inspirados en tus idols favoritos.</p>
+                    </div>
+                
+                 <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Protección para tus photocards</h4>
+                        <p>Mantén tus photocards protegidas y organizadas mientras presumes tu colección de K-pop.</p>
+                    </div>
 
-     <footer>
+                <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Diseños únicos para fans</h4>
+                        <p>Crea una funda original que refleje tu personalidad y tu amor por tus grupos favoritos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="WhatsApp Image 2026-10-12 at 7.21.44 AM (3).jpeg" alt="Fundas personalizadas de K-pop">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por el K-pop y las photocards.</h3>
+                    <p>En <strong>Fundas K-pop</strong>, nos encanta la cultura del K-pop y queremos que cada fan pueda guardar y proteger sus photocards con diseños personalizados que reflejen su estilo.</p>
+                    <p>Ofrecemos fundas creativas y personalizadas para que puedas cuidar tu colección y llevar contigo a tus idols favoritos.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150</span>
+                            <span class="stat-lbl">Diseños creados</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Amor por el K-pop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!--FOOTER-->
+<footer>
   <div class="footer-social">
     <div class="container social-icons">
       <a href="https://www.facebook.com/?locale=es_LA" aria-label="Facebook">
         <i class="fa-brands fa-facebook-f"></i>
       </a>
-      <a href="https://www.instagram.com/miri.delao?xtok=MWlueXR6dnNpZjNvYw==" aria-label="Instagram">
+      <a href="https://www.instagram.com/m_diego_h/" aria-label="Instagram">
         <i class="fa-brands fa-instagram"></i>
       </a>
-      <a href="https://youtube.com/@mirandadelao8953?si=Z_zSPhgxAJTKK2ZD" aria-label="YouTube">
+      <a href="https://www.youtube.com/?app=desktop&hl=es" aria-label="YouTube">
         <i class="fa-brands fa-youtube"></i>
       </a>
-      <a href="https://mx.linkedin.com/" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/home" aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
-      <a href="https://x.com/miranda08784122?s=11" aria-label="X (Twitter)">
+      <a href="https://x.com/" aria-label="X (Twitter)">
         <i class="fa-brands fa-x-twitter"></i>
       </a>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="container">
-      &copy; <span id="anio"></span> blooom
+      &copy; <span id="anio"></span> Fundas K-pop - Todos los derechos reservados.
     </div>
   </div>
-
 </footer>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>
